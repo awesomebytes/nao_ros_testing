@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.4.0" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+	<asset>
+		<contributor>
+			<author>Illusoft Collada 1.4.0 plugin for Blender - http://colladablender.illusoft.com</author>
+			<authoring_tool>Blender v:249 - Illusoft Collada Exporter v:0.3.162</authoring_tool>
+			<comments></comments>
+			<copyright></copyright>
+			<source_data>file:///home/r0s/workspace_nao/gazebonao/gnao/bodyparts/blender_bodyparts/foot.blend</source_data>
+		</contributor>
+		<created>2012-12-17T17:13:44.259645</created>
+		<modified>2012-12-17T17:13:44.259682</modified>
+		<unit meter="0.01" name="centimeter"/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_cameras>
+		<camera id="Camera-Camera" name="Camera-Camera">
+			<optics>
+				<technique_common>
+					<perspective>
+						<yfov>49.13434</yfov>
+						<znear>0.1</znear>
+						<zfar>100.0</zfar>
+					</perspective>
+				</technique_common>
+			</optics>
+		</camera>
+	</library_cameras>
+	<library_effects>
+		<effect id="naowhite-fx" name="naowhite-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<phong>
+						<emission>
+							<color>0.00000 0.00000 0.00000 1</color>
+						</emission>
+						<ambient>
+							<color>0.40000 0.40000 0.40000 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.80000 0.80000 0.80000 1</color>
+						</diffuse>
+						<specular>
+							<color>0.50000 0.50000 0.50000 1</color>
+						</specular>
+						<shininess>
+							<float>12.5</float>
+						</shininess>
+						<reflective>
+							<color>1.00000 1.00000 1.00000 1</color>
+						</reflective>
+						<reflectivity>
+							<float>0.0</float>
+						</reflectivity>
+						<transparent>
+							<color>1 1 1 1</color>
+						</transparent>
+						<transparency>
+							<float>0.0</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="matTeam-fx" name="matTeam-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<phong>
+						<emission>
+							<color>0.00000 0.00000 0.00000 1</color>
+						</emission>
+						<ambient>
+							<color>0.40000 0.40000 0.40000 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.80000 0.80000 0.80000 1</color>
+						</diffuse>
+						<specular>
+							<color>0.50000 0.50000 0.50000 1</color>
+						</specular>
+						<shininess>
+							<float>12.5</float>
+						</shininess>
+						<reflective>
+							<color>1.00000 1.00000 1.00000 1</color>
+						</reflective>
+						<reflectivity>
+							<float>0.0</float>
+						</reflectivity>
+						<transparent>
+							<color>1 1 1 1</color>
+						</transparent>
+						<transparency>
+							<float>0.0</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_lights>
+		<light id="Spot" name="Spot">
+			<technique_common>
+				<point>
+					<color>1.00000 1.00000 1.00000</color>
+					<constant_attenuation>1.0</constant_attenuation>
+					<linear_attenuation>0.0</linear_attenuation>
+					<quadratic_attenuation>0.0</quadratic_attenuation>
+				</point>
+			</technique_common>
+		</light>
+	</library_lights>
+	<library_materials>
+		<material id="naowhite" name="naowhite">
+			<instance_effect url="#naowhite-fx"/>
+		</material>
+		<material id="matTeam" name="matTeam">
+			<instance_effect url="#matTeam-fx"/>
+		</material>
+	</library_materials>
+	<library_geometries>
+		<geometry id="foot_Sph_000_naow" name="foot_Sph_000_naow">
+			<mesh>
+				<source id="foot_Sph_000_naow-Position">
+					<float_array count="255" id="foot_Sph_000_naow-Position-array">-0.21049 0.25001 1.05813 -0.00002 0.25000 1.10000 0.21046 0.25000 1.05814 -0.21050 0.00000 1.05813 0.21045 -0.00000 1.05814 -0.00003 0.00000 1.10000 -0.21044 0.25001 -1.05814 0.21051 0.25000 -1.05813 0.00004 0.25000 -1.10000 -0.21045 -0.11262 -1.05814 0.00003 0.00000 -1.10000 0.21050 -0.11263 -1.05813 0.44275 -0.11263 -0.27499 -0.55000 -0.11262 -0.27501 -0.54999 -0.11262 -0.55001 0.55001 -0.11264 -0.54999 0.44274 -0.11263 0.00001 -0.55000 -0.11262 -0.00001 0.44273 -0.11263 0.27501 -0.55001 -0.11262 0.27499 0.54999 -0.00001 0.55001 -0.55001 0.00001 0.54999 -0.54998 0.25001 -0.27501 0.44276 0.24999 -0.27499 -0.54998 0.25001 -0.55001 0.55002 0.24999 -0.54999 -0.54999 0.25001 -0.00001 0.44275 0.24999 0.00001 -0.55000 0.25001 0.27498 0.44274 0.24999 0.27501 -0.55000 0.25001 0.54998 0.55000 0.24999 0.55001 -0.38889 -0.11262 -0.93892 0.38893 -0.11263 -0.93890 -0.50812 -0.11262 -0.76049 0.50815 -0.11264 -0.76046 -0.38888 0.25001 -0.93892 0.38894 0.24999 -0.93890 -0.50811 0.25001 -0.76049 0.50816 0.24999 -0.76047 0.50812 -0.00001 0.76049 -0.50815 0.00001 0.76046 0.50813 0.24999 0.76048 -0.50814 0.25001 0.76046 -0.38893 0.00001 0.93890 0.38889 -0.00001 0.93892 -0.38892 0.25001 0.93890 0.38890 0.24999 0.93892 -0.54556 0.00633 0.46032 -0.50404 -0.07356 0.65321 -0.50404 0.00633 0.66910 0.50403 -0.07357 0.65323 0.54556 0.00632 0.46034 0.50403 0.00632 0.66912 0.50403 -0.14130 0.60797 -0.50404 -0.14129 0.60795 -0.50404 -0.18655 0.54022 0.50403 -0.18656 0.54024 0.50403 -0.20245 0.46034 -0.50404 -0.20244 0.46032 0.20877 -0.49771 0.46034 -0.00000 -0.53923 0.46033 -0.20878 -0.49770 0.46033 0.38577 -0.37945 0.46034 -0.38577 -0.37944 0.46033 -0.38577 -0.35007 0.60795 -0.20878 -0.45933 0.65321 -0.00001 -0.49770 0.66911 0.20877 -0.45934 0.65322 0.38576 -0.35008 0.60797 0.38576 -0.26646 0.73312 0.20877 -0.35008 0.81674 -0.00001 -0.37944 0.84610 -0.20878 -0.35007 0.81673 -0.38578 -0.26645 0.73311 -0.38578 -0.14130 0.81673 -0.20878 -0.18655 0.92599 -0.00001 -0.20245 0.96436 0.20877 -0.18656 0.92600 0.38576 -0.14130 0.81674 0.38576 0.00632 0.84611 0.20877 0.00633 0.96437 -0.00001 0.00633 1.00589 -0.20878 0.00633 0.96436 -0.38578 0.00633 0.84609</float_array>
+					<technique_common>
+						<accessor count="85" source="#foot_Sph_000_naow-Position-array" stride="3">
+							<param type="float" name="X"></param>
+							<param type="float" name="Y"></param>
+							<param type="float" name="Z"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="foot_Sph_000_naow-Normals">
+					<float_array count="465" id="foot_Sph_000_naow-Normals-array">0.00002 1.00000 0.00000 -0.00002 -1.00000 -0.00000 0.00002 1.00000 0.00000 0.00002 -0.34843 -0.93733 -0.00002 -1.00000 -0.00000 -0.00002 -1.00000 0.00000 -0.00002 -1.00000 -0.00000 -0.00002 -1.00000 -0.00000 -0.00002 -1.00000 -0.00000 -0.00002 -1.00000 -0.00000 -0.00003 -0.92540 0.37900 -0.00003 -0.92540 0.37900 0.00002 1.00000 0.00000 0.00002 1.00000 -0.00000 0.00002 1.00000 0.00000 0.00002 1.00000 0.00000 0.00002 1.00000 0.00000 0.00002 1.00000 0.00000 0.00002 1.00000 0.00000 0.00002 1.00000 0.00000 -1.00000 0.00003 -0.00003 -1.00000 0.00004 -0.00003 -1.00000 0.00003 -0.00002 -1.00000 0.00003 -0.00002 -1.00000 0.00003 -0.00002 -1.00000 0.00003 -0.00003 -1.00000 0.00003 -0.00003 -1.00000 0.00003 -0.00002 0.93166 -0.00003 -0.36334 0.93165 -0.00004 -0.36335 1.00000 -0.00003 0.00003 1.00000 -0.00003 0.00002 1.00000 -0.00003 0.00002 1.00000 -0.00003 0.00003 0.93164 -0.00003 0.36339 0.93164 -0.00003 0.36339 -0.00002 -1.00000 -0.00000 -0.00002 -1.00000 0.00000 -0.00002 -1.00000 -0.00000 -0.00002 -1.00000 0.00000 0.00002 1.00000 -0.00000 0.00002 1.00000 0.00000 0.00002 1.00000 0.00000 0.00002 1.00000 -0.00000 -0.00002 -1.00000 0.00000 -0.00002 -1.00000 -0.00000 0.00002 1.00000 0.00000 0.00002 1.00000 -0.00000 -0.00002 -1.00000 -0.00000 -0.00002 -1.00000 0.00000 0.00002 1.00000 -0.00000 0.00002 1.00000 0.00000 -0.00002 -1.00000 0.00000 -0.00002 -1.00000 -0.00000 0.00002 1.00000 -0.00000 0.00002 1.00000 0.00000 -0.00002 -1.00000 -0.00000 -0.00002 -1.00000 0.00000 0.00002 1.00000 -0.00000 0.00002 1.00000 0.00000 0.98079 -0.00003 -0.19507 0.98079 -0.00003 -0.19507 0.83148 -0.00003 -0.55555 0.83148 -0.00003 -0.55555 0.55559 -0.00003 -0.83146 0.55559 -0.00002 -0.83145 0.19511 -0.00002 -0.98078 0.19511 -0.00001 -0.98078 -0.19506 0.00000 -0.98079 -0.19507 -0.00000 -0.98079 -0.55555 0.00001 -0.83148 -0.55555 0.00001 -0.83148 -0.83146 0.00002 -0.55559 -0.83146 0.00002 -0.55559 -0.98078 0.00003 -0.19511 -0.98078 0.00003 -0.19511 -0.83148 0.00004 0.55555 -0.83148 0.00003 0.55555 -0.98079 0.00004 0.19507 -0.98079 0.00004 0.19507 0.98078 -0.00003 0.19511 0.98078 -0.00003 0.19511 0.83146 -0.00002 0.55559 0.83146 -0.00002 0.55559 0.55555 -0.00001 0.83148 0.55555 -0.00001 0.83148 0.19507 0.00000 0.98079 0.19507 0.00000 0.98079 -0.19511 0.00002 0.98078 -0.19511 0.00002 0.98078 -0.55559 0.00003 0.83146 -0.55559 0.00003 0.83146 -0.98005 -0.03877 0.19493 0.98005 -0.03878 0.19496 0.98005 -0.11042 0.16528 -0.98005 -0.11043 0.16525 -0.98005 -0.16526 0.11042 0.98005 -0.16527 0.11043 0.98005 -0.19495 0.03879 -0.98005 -0.19494 0.03877 0.00002 0.00000 -1.00000 0.00002 -0.00001 -1.00000 0.00002 -0.00001 -1.00000 0.00002 -0.00001 -1.00000 0.00002 -0.00001 -1.00000 0.00002 -0.00001 -1.00000 0.00002 -0.00001 -1.00000 -0.82644 -0.55220 0.10983 -0.82644 -0.55220 0.10984 -0.54813 -0.82032 0.16317 -0.54814 -0.82032 0.16317 -0.19150 -0.96263 0.19148 -0.19149 -0.96263 0.19148 0.19147 -0.96264 0.19149 0.19146 -0.96264 0.19148 0.54812 -0.82033 0.16318 0.54812 -0.82033 0.16318 0.82644 -0.55221 0.10985 0.82643 -0.55221 0.10985 0.82643 -0.46814 0.31281 0.82643 -0.46814 0.31281 0.54811 -0.69544 0.46469 0.54811 -0.69544 0.46469 0.19146 -0.81608 0.54530 0.19146 -0.81608 0.54530 -0.19150 -0.81608 0.54529 -0.19150 -0.81608 0.54529 -0.54814 -0.69543 0.46467 -0.54814 -0.69543 0.46467 -0.82644 -0.46813 0.31280 -0.82645 -0.46813 0.31279 -0.82645 -0.31280 0.46813 -0.82645 -0.31280 0.46813 -0.54814 -0.46467 0.69543 -0.54814 -0.46467 0.69543 -0.19150 -0.54528 0.81608 -0.19150 -0.54528 0.81609 0.19146 -0.54529 0.81609 0.19146 -0.54529 0.81609 0.54811 -0.46467 0.69545 0.54811 -0.46468 0.69545 0.82643 -0.31280 0.46815 0.82643 -0.31280 0.46815 0.82643 -0.10984 0.55222 0.82643 -0.10983 0.55222 0.54811 -0.16316 0.82034 0.54811 -0.16316 0.82034 0.19146 -0.19147 0.96264 0.19146 -0.19147 0.96264 -0.19150 -0.19147 0.96264 -0.19150 -0.19147 0.96264 -0.54814 -0.16316 0.82032 -0.54814 -0.16316 0.82032 -0.82645 -0.10983 0.55220 -0.82645 -0.10983 0.55220</float_array>
+					<technique_common>
+						<accessor count="155" source="#foot_Sph_000_naow-Normals-array" stride="3">
+							<param type="float" name="X"></param>
+							<param type="float" name="Y"></param>
+							<param type="float" name="Z"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="foot_Sph_000_naow-Vertex">
+					<input semantic="POSITION" source="#foot_Sph_000_naow-Position"/>
+				</vertices>
+				<triangles count="155" material="naowhite">
+					<input offset="0" semantic="VERTEX" source="#foot_Sph_000_naow-Vertex"/>
+					<input offset="1" semantic="NORMAL" source="#foot_Sph_000_naow-Normals"/>
+					<p>0 0 1 0 2 0 3 1 4 1 5 1 6 2 7 2 8 2 9 3 10 3 11 3 12 4 13 4 14 4 12 5 14 5 15 5 16 6 17 6 12 6 17 7 13 7 12 7 18 8 19 8 16 8 19 9 17 9 16 9 20 10 21 10 18 10 21 11 19 11 18 11 22 12 23 12 24 12 23 13 25 13 24 13 26 14 27 14 23 14 26 15 23 15 22 15 28 16 29 16 27 16 28 17 27 17 26 17 30 18 31 18 29 18 30 19 29 19 28 19 28 20 19 20 21 20 28 21 21 21 30 21 26 22 17 22 28 22 17 23 19 23 28 23 22 24 13 24 26 24 13 25 17 25 26 25 24 26 14 26 22 26 14 27 13 27 22 27 18 28 29 28 20 28 29 29 31 29 20 29 16 30 27 30 29 30 16 31 29 31 18 31 12 32 23 32 27 32 12 33 27 33 16 33 15 34 25 34 23 34 15 35 23 35 12 35 32 36 9 36 11 36 32 37 11 37 33 37 34 38 32 38 33 38 34 39 33 39 35 39 36 40 37 40 7 40 36 41 7 41 6 41 38 42 39 42 36 42 39 43 37 43 36 43 14 44 34 44 35 44 14 45 35 45 15 45 24 46 25 46 39 46 24 47 39 47 38 47 40 48 41 48 21 48 40 49 21 49 20 49 42 50 31 50 30 50 42 51 30 51 43 51 44 52 41 52 45 52 41 53 40 53 45 53 46 54 47 54 43 54 47 55 42 55 43 55 44 56 45 56 4 56 44 57 4 57 3 57 46 58 0 58 2 58 46 59 2 59 47 59 35 60 39 60 25 60 35 61 25 61 15 61 33 62 37 62 35 62 37 63 39 63 35 63 11 64 7 64 33 64 7 65 37 65 33 65 10 66 8 66 7 66 10 67 7 67 11 67 9 68 6 68 10 68 6 69 8 69 10 69 32 70 36 70 9 70 36 71 6 71 9 71 34 72 38 72 32 72 38 73 36 73 32 73 14 74 24 74 34 74 24 75 38 75 34 75 46 76 43 76 44 76 43 77 41 77 44 77 41 78 43 78 21 78 43 79 30 79 21 79 20 80 31 80 42 80 20 81 42 81 40 81 40 82 42 82 47 82 40 83 47 83 45 83 45 84 47 84 2 84 45 85 2 85 4 85 4 86 2 86 1 86 4 87 1 87 5 87 1 88 0 88 5 88 5 89 0 89 3 89 3 90 0 90 46 90 3 91 46 91 44 91 48 92 49 92 50 92 51 93 52 93 53 93 54 94 52 94 51 94 48 95 55 95 49 95 48 96 56 96 55 96 57 97 52 97 54 97 58 98 52 98 57 98 48 99 59 99 56 99 60 100 61 100 62 100 63 101 60 101 62 101 63 102 62 102 64 102 58 103 63 103 64 103 58 104 64 104 59 104 52 105 58 105 59 105 52 106 59 106 48 106 56 107 59 107 64 107 56 108 64 108 65 108 65 109 64 109 62 109 65 110 62 110 66 110 66 111 62 111 61 111 66 112 61 112 67 112 67 113 61 113 60 113 67 114 60 114 68 114 68 115 60 115 63 115 68 116 63 116 69 116 69 117 63 117 57 117 63 118 58 118 57 118 70 119 69 119 54 119 69 120 57 120 54 120 71 121 68 121 69 121 71 122 69 122 70 122 72 123 67 123 68 123 72 124 68 124 71 124 73 125 66 125 67 125 73 126 67 126 72 126 74 127 65 127 66 127 74 128 66 128 73 128 55 129 56 129 65 129 55 130 65 130 74 130 49 131 55 131 75 131 55 132 74 132 75 132 75 133 74 133 76 133 74 134 73 134 76 134 76 135 73 135 77 135 73 136 72 136 77 136 77 137 72 137 78 137 72 138 71 138 78 138 78 139 71 139 70 139 78 140 70 140 79 140 79 141 70 141 54 141 79 142 54 142 51 142 80 143 79 143 51 143 80 144 51 144 53 144 81 145 78 145 80 145 78 146 79 146 80 146 82 147 77 147 81 147 77 148 78 148 81 148 83 149 76 149 82 149 76 150 77 150 82 150 84 151 75 151 83 151 75 152 76 152 83 152 50 153 49 153 84 153 49 154 75 154 84 154</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="foot_Sphere__matT" name="foot_Sphere__matT">
+			<mesh>
+				<source id="foot_Sphere__matT-Position">
+					<float_array count="144" id="foot_Sphere__matT-Position-array">0.54999 -0.00001 0.55001 0.44273 -0.11263 0.27501 0.54999 -0.11264 0.27501 0.55000 0.24999 0.55001 0.55000 0.24999 0.27501 0.44274 0.24999 0.27501 0.55002 0.24999 -0.54999 0.44276 0.24999 -0.27499 0.55002 0.24999 -0.27499 0.55001 -0.11264 -0.54999 0.55001 -0.11264 -0.27499 0.44275 -0.11263 -0.27499 0.50402 0.00295 0.75788 0.50402 -0.07695 0.74199 0.54555 0.00295 0.54910 -0.50405 0.00296 0.75786 -0.54558 0.00296 0.54908 -0.50405 -0.07694 0.74197 -0.38579 0.00296 0.93486 -0.38579 -0.14467 0.90549 -0.20880 0.00295 1.05312 -0.20880 -0.18993 1.01476 -0.00002 0.00295 1.09466 -0.00002 -0.20583 1.05313 0.20876 0.00295 1.05313 0.20876 -0.18993 1.01477 0.38575 0.00295 0.93487 0.38575 -0.14468 0.90551 0.50402 0.00295 0.66601 0.54555 0.00295 0.45724 -0.54557 0.00296 0.45722 -0.50405 0.00296 0.66599 -0.50405 -0.07694 0.65010 0.50402 -0.07695 0.65012 0.38575 -0.14468 0.81364 0.20876 -0.18993 0.92290 -0.00002 -0.20583 0.96126 -0.20879 -0.18993 0.92289 -0.38579 -0.14467 0.81362 -0.38579 0.00296 0.84299 -0.20879 0.00295 0.96125 -0.00002 0.00295 1.00279 0.20876 0.00295 0.96126 0.38575 0.00295 0.84300 0.44274 -0.11263 0.00001 0.55000 -0.11264 0.00001 0.44275 0.24999 0.00001 0.55001 0.24999 0.00001</float_array>
+					<technique_common>
+						<accessor count="48" source="#foot_Sphere__matT-Position-array" stride="3">
+							<param type="float" name="X"></param>
+							<param type="float" name="Y"></param>
+							<param type="float" name="Z"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="foot_Sphere__matT-Normals">
+					<float_array count="198" id="foot_Sphere__matT-Normals-array">-0.00001 -0.92540 0.37899 0.00003 1.00000 0.00000 0.00003 1.00000 0.00000 -0.00002 -1.00000 -0.00000 0.98005 -0.03878 0.19495 -0.98005 -0.03877 0.19494 -0.82645 -0.10983 0.55220 -0.82645 -0.10983 0.55220 -0.54814 -0.16316 0.82032 -0.54814 -0.16316 0.82032 -0.19150 -0.19147 0.96264 -0.19150 -0.19147 0.96264 0.19146 -0.19147 0.96264 0.19146 -0.19147 0.96264 0.54811 -0.16317 0.82034 0.54811 -0.16317 0.82033 0.82643 -0.10983 0.55222 0.82643 -0.10984 0.55222 0.00002 1.00000 0.00000 0.00002 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 -0.88729 -0.46121 -0.00001 -0.88729 -0.46121 -0.00002 0.88730 -0.46119 0.00002 0.88730 -0.46120 0.00001 0.49698 -0.86776 0.00001 0.49698 -0.86776 0.00001 0.24772 -0.96883 0.00001 0.24772 -0.96883 0.00000 0.07589 -0.99712 0.00000 0.07589 -0.99712 0.00000 -0.07591 -0.99711 -0.00000 -0.07591 -0.99711 -0.00000 -0.24774 -0.96883 -0.00001 -0.24774 -0.96883 -0.00000 -0.49699 -0.86776 -0.00001 -0.49699 -0.86776 -0.00001 0.00001 1.00000 0.00000 0.00001 1.00000 0.00000 0.00001 1.00000 0.00000 0.00001 1.00000 0.00000 0.00001 1.00000 0.00000 0.00001 1.00000 0.00000 0.00001 1.00000 0.00000 0.00001 1.00000 0.00000 0.00002 1.00000 0.00000 0.00002 1.00000 0.00000 0.00001 1.00000 0.00000 0.00001 1.00000 0.00000 -0.00002 -1.00000 -0.00000 -0.00002 -1.00000 -0.00000 -0.00002 -1.00000 -0.00000 -0.00002 -1.00000 -0.00000 0.00003 1.00000 0.00000 0.00003 1.00000 0.00000 0.00003 1.00000 0.00000 0.00003 1.00000 0.00000 1.00000 -0.00003 0.00002 1.00000 -0.00003 0.00002 1.00000 -0.00003 0.00002 1.00000 -0.00003 0.00002 1.00000 -0.00003 0.00003 1.00000 -0.00003 0.00002 1.00000 -0.00003 0.00003 1.00000 -0.00004 0.00003</float_array>
+					<technique_common>
+						<accessor count="66" source="#foot_Sphere__matT-Normals-array" stride="3">
+							<param type="float" name="X"></param>
+							<param type="float" name="Y"></param>
+							<param type="float" name="Z"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="foot_Sphere__matT-Vertex">
+					<input semantic="POSITION" source="#foot_Sphere__matT-Position"/>
+				</vertices>
+				<triangles count="66" material="matTeam">
+					<input offset="0" semantic="VERTEX" source="#foot_Sphere__matT-Vertex"/>
+					<input offset="1" semantic="NORMAL" source="#foot_Sphere__matT-Normals"/>
+					<p>0 0 1 0 2 0 3 1 4 1 5 1 6 2 7 2 8 2 9 3 10 3 11 3 12 4 13 4 14 4 15 5 16 5 17 5 18 6 15 6 17 6 18 7 17 7 19 7 20 8 18 8 19 8 20 9 19 9 21 9 22 10 20 10 21 10 22 11 21 11 23 11 24 12 22 12 23 12 24 13 23 13 25 13 26 14 24 14 25 14 26 15 25 15 27 15 12 16 26 16 13 16 26 17 27 17 13 17 28 18 12 18 14 18 28 19 14 19 29 19 30 20 16 20 31 20 16 21 15 21 31 21 32 22 17 22 16 22 32 23 16 23 30 23 29 24 14 24 33 24 14 25 13 25 33 25 33 26 13 26 34 26 13 27 27 27 34 27 34 28 27 28 35 28 27 29 25 29 35 29 35 30 25 30 36 30 25 31 23 31 36 31 36 32 23 32 21 32 36 33 21 33 37 33 37 34 21 34 19 34 37 35 19 35 38 35 38 36 19 36 17 36 38 37 17 37 32 37 31 38 15 38 39 38 15 39 18 39 39 39 39 40 18 40 40 40 18 41 20 41 40 41 40 42 20 42 41 42 20 43 22 43 41 43 41 44 22 44 24 44 41 45 24 45 42 45 42 46 24 46 26 46 42 47 26 47 43 47 12 48 28 48 43 48 12 49 43 49 26 49 44 50 11 50 45 50 11 51 10 51 45 51 1 52 44 52 2 52 44 53 45 53 2 53 46 54 47 54 7 54 47 55 8 55 7 55 5 56 4 56 46 56 4 57 47 57 46 57 9 58 6 58 8 58 9 59 8 59 10 59 45 60 10 60 47 60 10 61 8 61 47 61 2 62 45 62 4 62 45 63 47 63 4 63 0 64 2 64 4 64 0 65 4 65 3 65</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_visual_scenes>
+		<visual_scene id="Scene" name="Scene">
+			<node layer="L1" id="foot_Sph_000_naowhite" name="foot_Sph_000_naowhite">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#foot_Sph_000_naow">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="naowhite" target="#naowhite">
+								<bind_vertex_input input_semantic="TEXCOORD" input_set="1" semantic="CHANNEL1"/>
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="foot_Sphere__matTeam" name="foot_Sphere__matTeam">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#foot_Sphere__matT">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="matTeam" target="#matTeam">
+								<bind_vertex_input input_semantic="TEXCOORD" input_set="1" semantic="CHANNEL1"/>
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="Lamp" name="Lamp">
+				<translate sid="translate">4.07625 1.00545 5.90386</translate>
+				<rotate sid="rotateZ">0 0 1 106.93632</rotate>
+				<rotate sid="rotateY">0 1 0 3.16371</rotate>
+				<rotate sid="rotateX">1 0 0 37.26105</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_light url="#Spot"/>
+			</node>
+			<node layer="L1" id="Camera" name="Camera">
+				<translate sid="translate">7.48113 -6.50764 5.34367</translate>
+				<rotate sid="rotateZ">0 0 1 46.69194</rotate>
+				<rotate sid="rotateY">0 1 0 0.61977</rotate>
+				<rotate sid="rotateX">1 0 0 63.55930</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_camera url="#Camera-Camera"/>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<library_physics_materials>
+		<physics_material id="foot_Sph_000_naowhite-PhysicsMaterial" name="foot_Sph_000_naowhite-PhysicsMaterial">
+			<technique_common>
+				<dynamic_friction>0.5</dynamic_friction>
+				<restitution>0.0</restitution>
+				<static_friction>0.5</static_friction>
+			</technique_common>
+		</physics_material>
+		<physics_material id="foot_Sphere__matTeam-PhysicsMaterial" name="foot_Sphere__matTeam-PhysicsMaterial">
+			<technique_common>
+				<dynamic_friction>0.5</dynamic_friction>
+				<restitution>0.0</restitution>
+				<static_friction>0.5</static_friction>
+			</technique_common>
+		</physics_material>
+	</library_physics_materials>
+	<library_physics_models>
+		<physics_model id="Scene-PhysicsModel" name="Scene-PhysicsModel">
+			<rigid_body name="foot_Sph_000_naowhite-RigidBody" sid="foot_Sph_000_naowhite-RigidBody">
+				<technique_common>
+					<dynamic>false</dynamic>
+					<mass>0</mass>
+					<instance_physics_material url="#foot_Sph_000_naowhite-PhysicsMaterial"/>
+					<shape>
+						<instance_geometry url="#foot_Sph_000_naow"/>
+					</shape>
+				</technique_common>
+			</rigid_body>
+			<rigid_body name="foot_Sphere__matTeam-RigidBody" sid="foot_Sphere__matTeam-RigidBody">
+				<technique_common>
+					<dynamic>false</dynamic>
+					<mass>0</mass>
+					<instance_physics_material url="#foot_Sphere__matTeam-PhysicsMaterial"/>
+					<shape>
+						<instance_geometry url="#foot_Sphere__matT"/>
+					</shape>
+				</technique_common>
+			</rigid_body>
+		</physics_model>
+	</library_physics_models>
+	<library_physics_scenes>
+		<physics_scene id="Scene-Physics" name="Scene-Physics">
+			<instance_physics_model url="#Scene-PhysicsModel">
+				<instance_rigid_body body="foot_Sph_000_naowhite-RigidBody" target="#foot_Sph_000_naowhite"/>
+				<instance_rigid_body body="foot_Sphere__matTeam-RigidBody" target="#foot_Sphere__matTeam"/>
+			</instance_physics_model>
+		</physics_scene>
+	</library_physics_scenes>
+	<scene>
+		<instance_physics_scene url="#Scene-Physics"/>
+		<instance_visual_scene url="#Scene"/>
+	</scene>
+</COLLADA>

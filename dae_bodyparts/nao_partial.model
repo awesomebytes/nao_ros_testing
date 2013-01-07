@@ -1,0 +1,15 @@
+<model name="cuerpo_1" static="true">
+    <link name="cuerpo_1_link">
+        <origin pose="0 0 0 0 0 0"/>
+        <collision name="cuerpo_collision">
+            <geometry>
+                <mesh filename="cuerpo.dae" scale="1 1 1"/>
+            </geometry>
+        </collision>
+        <visual name="cuerpo_visual" cast_shadows="false">
+            <geometry>
+                <mesh filename="cuerpo.dae" scale="1 1 1"/>
+            </geometry>
+        </visual>
+    </link>
+</model>
